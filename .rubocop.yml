@@ -48,3 +48,4 @@ AllCops:
     - 'spec/dummy/config/**/*'
     - 'spec/dummy/bin/**/*'
     - 'spec/dummy/db/schema.rb'
+    - 'vendor/**/*'
