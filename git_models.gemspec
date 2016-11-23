@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'rails', '4.2.7.1'
   spec.add_dependency 'hobo_fields', '2.2.6'
-  spec.add_dependency 'git-lib', '1.0.0'
+  spec.add_dependency 'git_lib', '1.0.0'
 
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake', '~> 11.0'
