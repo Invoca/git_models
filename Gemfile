@@ -15,5 +15,5 @@ group :test do
   gem 'bundler-audit', require: false
 end
 
-gem 'git_lib',  '1.0.0', git: 'git@github.com:mikeweaver/git_lib', ref: '41dcc374b195d0cd2b78763918343eb713e44fe0'
+gem 'git_lib',  '1.0.0', git: 'git@github.com:mikeweaver/git_lib', ref: '033b5ff6376a138f90a7debaf05c0f9549764f9f'
 gem 'hobo_fields'
