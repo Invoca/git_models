@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.7.1'
+gem 'rails', '4.2.11.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -15,5 +15,5 @@ group :test do
   gem 'bundler-audit', require: false
 end
 
-gem 'git_lib',  '1.0.0', git: 'git@github.com:mikeweaver/git_lib', ref: '033b5ff6376a138f90a7debaf05c0f9549764f9f'
+gem 'git_lib',  '1.1.0', git: 'git@github.com:Invoca/git_lib', ref: '61e412d05eaca46c0416e4602e164ba59d3c9a74'
 gem 'hobo_fields'
