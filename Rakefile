@@ -10,4 +10,4 @@ RuboCop::RakeTask.new
 Coveralls::RakeTask.new
 Bundler::Audit::Task.new
 
-task default: [:spec, :rubocop]
+task default: :spec
