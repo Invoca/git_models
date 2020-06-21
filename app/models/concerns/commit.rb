@@ -14,7 +14,7 @@ module GitModels
       validates :sha, uniqueness: { message: 'SHAs must be globally unique' }
       validates :sha, format: { without: /[0]{40}/ }
 
-      belongs_to :author, class_name: ::User, inverse_of: :commits, required: true
+      belongs_to :author, class_name: 'User', inverse_of: :commits, required: true
 
       def short_sha
         sha[0, 7]
