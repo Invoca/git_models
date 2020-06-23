@@ -1,10 +1,10 @@
 GIT
   remote: git@github.com:Invoca/git_lib
-  revision: 1770e03ba5c39d5545bc614cc59eef32f7471290
-  ref: 1770e03ba5c39d5545bc614cc59eef32f7471290
+  revision: 1478444f590d8886e40c8bfa440b0d3fd614ccec
+  ref: 1478444f590d8886e40c8bfa440b0d3fd614ccec
   specs:
-    git_lib (1.1.0)
-      activesupport (= 4.2.11.1)
+    git_lib (1.1.1)
+      activesupport (~> 4.2)
 
 GEM
   remote: https://rubygems.org/
@@ -177,7 +177,7 @@ DEPENDENCIES
   coveralls
   database_cleaner
   fakefs (~> 0.9.3)
-  git_lib (= 1.1.0)!
+  git_lib (= 1.1.1)!
   hobo_fields
   rake
   rspec (~> 3.5)

@@ -7,7 +7,7 @@ gem 'bundler-audit', require: false
 gem 'coveralls', require: false
 gem 'database_cleaner'
 gem 'fakefs', '~> 0.9.3'
-gem 'git_lib',  '1.1.0', git: 'git@github.com:Invoca/git_lib', ref: '1770e03ba5c39d5545bc614cc59eef32f7471290'
+gem 'git_lib',  '1.1.1', git: 'git@github.com:Invoca/git_lib', ref: '1478444f590d8886e40c8bfa440b0d3fd614ccec'
 gem 'hobo_fields'
 gem 'rake'
 gem 'rspec', '~> 3.5'
