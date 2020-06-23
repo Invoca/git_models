@@ -26,7 +26,7 @@ module GitModels
         name
       end
 
-      def =~(other) # rubocop:disable Rails/Delegate
+      def =~(other)
         name =~ other
       end
 

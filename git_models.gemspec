@@ -16,13 +16,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['app', 'lib']
 
-  spec.add_dependency 'rails', '4.2.11.1'
+  spec.add_dependency 'rails', '~> 4.2'
   spec.add_dependency 'hobo_fields', '2.2.6'
   spec.add_dependency 'git_lib', '1.1.0'
-
-  spec.add_development_dependency 'bundler', '~> 1.17'
-  spec.add_development_dependency 'rake', '~> 12.0'
-  spec.add_development_dependency 'rspec', '~> 3.5'
-  spec.add_development_dependency 'fakefs', '~> 0.9.3'
-  spec.add_development_dependency "sqlite3"
 end
