@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ENV['RAILS_ENV'] ||= 'test'
 require 'coveralls'
 Coveralls.wear!('rails') if ENV['CI'] == 'true'

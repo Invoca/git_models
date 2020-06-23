@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateCommitsRepositoriesBranches < ActiveRecord::Migration
   def self.up
     create_table :branches do |t|

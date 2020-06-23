@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module GitModels
   module Repository
     extend ActiveSupport::Concern

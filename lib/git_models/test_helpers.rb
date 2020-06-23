@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module GitModels
   module TestHelpers
     def self.create_branch(repository_name: 'repository_name',
