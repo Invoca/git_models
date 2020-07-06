@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-class Branch < ActiveRecord::Base
+class Branch < ApplicationRecord
   include GitModels::Branch
 end

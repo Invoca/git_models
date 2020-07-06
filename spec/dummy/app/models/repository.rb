@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-class Repository < ActiveRecord::Base
+class Repository < ApplicationRecord
   include GitModels::Repository
 end
