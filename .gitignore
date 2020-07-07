@@ -6,7 +6,9 @@
 /InstalledFiles
 /pkg/
 /spec/reports/
+/spec/dummy/spec/reports
 /test/tmp/
+/spec/dummy/tmp
 /test/version_tmp/
 /tmp/
 *secrets*
