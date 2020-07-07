@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.version       = GitModels::VERSION
   spec.authors       = ['Invoca Development']
   spec.email         = ['development@invoca.com']
-  spec.summary       = %q{Rails models for Git data.}
+  spec.summary       = "Rails models for Git data."
   spec.homepage      = ''
 
   spec.metadata = {
