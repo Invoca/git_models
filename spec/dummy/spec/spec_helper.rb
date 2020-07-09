@@ -7,7 +7,6 @@ require "bundler/setup"
 require 'coveralls'
 Coveralls.wear!('rails') if ENV['CI'] == 'true'
 require_relative '../config/environment'
-require 'rails/test_help'
 require 'git/git_test_helpers'
 require 'git_models/test_helpers'
 require 'database_cleaner'
