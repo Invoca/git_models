@@ -8,8 +8,8 @@ GIT
 
 GIT
   remote: git@github.com:Invoca/hobo_fields
-  revision: 174af7357f784f46ffae7fa2576c27d677391e5f
-  ref: 174af7357f784f46ffae7fa2576c27d677391e5f
+  revision: e9623e9c3aa98a4822ef61d1f1e87d0ff8001ffc
+  ref: e9623e9c3aa98a4822ef61d1f1e87d0ff8001ffc
   specs:
     hobo_fields (3.0.0)
       invoca-utils (~> 0.4)
