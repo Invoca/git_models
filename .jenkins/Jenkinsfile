@@ -13,6 +13,7 @@ pipeline {
   environment {
     GITHUB_TOKEN = credentials('github_token')
     BUNDLE_GEM__FURY__IO = credentials('gemfury_deploy_token')
+    RAILS_ENV = 'test'
   }
 
   stages {
@@ -28,25 +29,33 @@ pipeline {
       parallel {
         stage('Current') {
           environment { JUNIT_OUTPUT = 'spec/reports/current/rspec.xml' }
-          steps       { sh 'bundle exec rake db:test:prepare && bundle exec rake' }
+          steps       { sh 'bundle exec rake db:test:create && \
+                            bundle exec rake db:test:prepare && \
+                            bundle exec rake' }
           post        { always { junit JUNIT_OUTPUT } }
         }
 
         stage('Rails 4') {
           environment { JUNIT_OUTPUT = 'spec/reports/rails-4/rspec.xml' }
-          steps       { sh 'bundle exec appraisal rails-4 rake db:test:prepare && bundle exec appraisal rails-4 rake' }
+          steps       { sh 'bundle exec appraisal rails-4 rake db:create && \
+                            bundle exec appraisal rails-4 rake db:test:prepare && \
+                            bundle exec appraisal rails-4 rake' }
           post        { always { junit JUNIT_OUTPUT } }
         }
 
         stage('Rails 5') {
           environment { JUNIT_OUTPUT = 'spec/reports/rails-5/rspec.xml' }
-          steps       { sh 'bundle exec appraisal rails-5 rake db:test:prepare && bundle exec appraisal rails-5 rake' }
+          steps       { sh 'bundle exec appraisal rails-5 rake db:create && \
+                            bundle exec appraisal rails-5 rake db:test:prepare && \
+                            bundle exec appraisal rails-5 rake' }
           post        { always { junit JUNIT_OUTPUT } }
         }
 
         stage('Rails 6') {
           environment { JUNIT_OUTPUT = 'spec/reports/rails-6/rspec.xml' }
-          steps       { sh 'bundle exec appraisal rails-5 rake db:test:prepare && bundle exec appraisal rails-5 rake' }
+          steps       { sh 'bundle exec appraisal rails-5 rake db:create && \
+                            bundle exec appraisal rails-5 rake db:test:prepare && \
+                            bundle exec appraisal rails-5 rake' }
           post        { always { junit JUNIT_OUTPUT } }
         }
       }
