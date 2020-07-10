@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:Invoca/git_lib
+  remote: https://github.com/Invoca/git_lib.git
   revision: 785505fd4d55eb6968a75cdb546365d935d8655b
   ref: 785505fd4d55eb6968a75cdb546365d935d8655b
   specs:
@@ -7,7 +7,7 @@ GIT
       activesupport (>= 4.2, < 7)
 
 GIT
-  remote: git@github.com:Invoca/hobo_fields
+  remote: https://github.com/Invoca/hobo_fields.git
   revision: e9623e9c3aa98a4822ef61d1f1e87d0ff8001ffc
   ref: e9623e9c3aa98a4822ef61d1f1e87d0ff8001ffc
   specs:
