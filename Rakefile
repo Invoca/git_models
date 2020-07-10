@@ -18,7 +18,7 @@ namespace :db do
       system <<~EOS
         set -ex
         cd spec/dummy
-        rake db:test:prepare
+        rake db:create && rake db:test:prepare
       EOS
     end
   end
