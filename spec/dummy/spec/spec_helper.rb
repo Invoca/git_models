@@ -27,7 +27,7 @@ RSpec.configure do |config|
     end
   end
 
-  # config.add_formatter RspecJunitFormatter, ENV['JUNIT_OUTPUT'] || 'spec/reports/rspec.xml'
+  config.add_formatter RspecJunitFormatter, ENV['JUNIT_OUTPUT'] || 'spec/reports/rspec.xml'
 
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = "spec/reports/.rspec_status"
