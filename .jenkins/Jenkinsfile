@@ -28,25 +28,25 @@ pipeline {
       parallel {
         stage('Current') {
           environment { JUNIT_OUTPUT = 'spec/reports/current/rspec.xml' }
-          steps       { sh 'bundle exec rspec' }
+          steps       { sh 'bundle exec rake db:test:prepare && bundle exec rake' }
           post        { always { junit JUNIT_OUTPUT } }
         }
 
         stage('Rails 4') {
           environment { JUNIT_OUTPUT = 'spec/reports/rails-4/rspec.xml' }
-          steps       { sh 'bundle exec appraisal rails-4 rspec' }
+          steps       { sh 'bundle exec appraisal rails-4 rake db:test:prepare && bundle exec appraisal rails-4 rake' }
           post        { always { junit JUNIT_OUTPUT } }
         }
 
         stage('Rails 5') {
           environment { JUNIT_OUTPUT = 'spec/reports/rails-5/rspec.xml' }
-          steps       { sh 'bundle exec appraisal rails-5 rspec' }
+          steps       { sh 'bundle exec appraisal rails-5 rake db:test:prepare && bundle exec appraisal rails-5 rake' }
           post        { always { junit JUNIT_OUTPUT } }
         }
 
         stage('Rails 6') {
           environment { JUNIT_OUTPUT = 'spec/reports/rails-6/rspec.xml' }
-          steps       { sh 'bundle exec appraisal rails-6 rspec' }
+          steps       { sh 'bundle exec appraisal rails-5 rake db:test:prepare && bundle exec appraisal rails-5 rake' }
           post        { always { junit JUNIT_OUTPUT } }
         }
       }
