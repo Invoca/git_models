@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/Invoca/git_lib.git
-  revision: 785505fd4d55eb6968a75cdb546365d935d8655b
-  ref: 785505fd4d55eb6968a75cdb546365d935d8655b
+  revision: a4a4b46ba00d85df4ca907c960ddf92a85a8c169
+  ref: a4a4b46ba00d85df4ca907c960ddf92a85a8c169
   specs:
     git_lib (1.2.0)
       activesupport (>= 4.2, < 7)
