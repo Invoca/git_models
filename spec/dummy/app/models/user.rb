@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
-class User < ActiveRecord::Base
+require_relative 'application_record'
+require_relative '../../../../app/models/concerns/user'
+
+class User < ApplicationRecord
   include GitModels::User
 end

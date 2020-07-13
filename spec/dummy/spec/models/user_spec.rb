@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
+require_relative '../../app/models/user'
 
-describe 'User' do
+RSpec.describe User do
   it 'can create be constructed from git data' do
     git_data = Git::GitBranch.new(
       'repository_name',

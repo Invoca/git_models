@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'hobo_fields'
+
 module GitModels
   module User
     extend ActiveSupport::Concern
