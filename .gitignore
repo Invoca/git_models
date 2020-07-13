@@ -57,3 +57,5 @@ shared/
 /spec/dummy/db/*.sqlite3
 /spec/dummy/log/*
 /spec/dummy/coverage/*
+
+gemfiles/*.lock
