@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'hobo_fields'
+
 module GitModels
   module User
     extend ActiveSupport::Concern
@@ -13,8 +15,8 @@ module GitModels
 
       validates :name, uniqueness: { scope: :email }
 
-      has_many :branches, class_name: ::Branch, foreign_key: 'author_id'
-      has_many :commits, class_name: ::Commit, foreign_key: 'author_id'
+      has_many :branches, class_name: 'Branch', foreign_key: 'author_id'
+      has_many :commits, class_name: 'Commit', foreign_key: 'author_id'
     end
 
     class_methods do

@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
+require_relative '../../app/models/commit'
 
-describe 'Commit' do
+RSpec.describe Commit do
   before do
     @git_commit = Git::GitCommit.new(
       '6d8cc7db8021d3dbf90a4ebd378d2ecb97c2bc25',

@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
-class Repository < ActiveRecord::Base
+require_relative 'application_record'
+require_relative '../../../../app/models/concerns/repository'
+
+class Repository < ApplicationRecord
   include GitModels::Repository
 end

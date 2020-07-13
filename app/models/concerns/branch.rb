@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'hobo_fields'
+
 module GitModels
   module Branch
     extend ActiveSupport::Concern
@@ -13,8 +15,8 @@ module GitModels
 
       validates :name, uniqueness: { scope: :repository, message: 'Branch names must be unique within each repository' }
 
-      belongs_to :author, class_name: ::User, inverse_of: :branches, required: true
-      belongs_to :repository, class_name: ::Repository, inverse_of: :branches, required: true
+      belongs_to :author, class_name: 'User', inverse_of: :branches, required: true
+      belongs_to :repository, class_name: 'Repository', inverse_of: :branches, required: true
 
       scope :branches_not_updated_since, lambda { |checked_at_date| where('branches.updated_at < ?', checked_at_date) }
 

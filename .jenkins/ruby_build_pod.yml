@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+  jenkins/git-models: 'true'
+  namespace: jenkins
+  name: git-models
+spec:
+  containers:
+  - name: ruby
+    image: ruby:2.6.1
+    tty: true
+    resources:
+    requests:
+      memory: "100Mi"
+    command:
+      - cat

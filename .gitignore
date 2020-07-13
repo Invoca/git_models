@@ -6,7 +6,9 @@
 /InstalledFiles
 /pkg/
 /spec/reports/
+/spec/dummy/spec/reports
 /test/tmp/
+/spec/dummy/tmp
 /test/version_tmp/
 /tmp/
 *secrets*
@@ -42,6 +44,8 @@ shared/
 # rubymine
 .idea
 
+.keep
+
 # mac
 .DS_Store
 
@@ -53,3 +57,5 @@ shared/
 /spec/dummy/db/*.sqlite3
 /spec/dummy/log/*
 /spec/dummy/coverage/*
+
+gemfiles/*.lock

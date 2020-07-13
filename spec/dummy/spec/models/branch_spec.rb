@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
+require_relative '../../app/models/branch'
 
-describe 'Branch' do
+RSpec.describe Branch do
   it 'can create be constructed from git data' do
     branch = GitModels::TestHelpers.create_branch
     expect(branch.name).to eq('path/branch')
@@ -12,6 +12,7 @@ describe 'Branch' do
   end
 
   it 'does not create duplicate database records' do
+    expect(Branch.all.count).to eq(0)
     git_data = Git::GitBranch.new('repository_name', 'name', Time.current, 'author_name', 'author@email.com')
     Branch.create_from_git_data!(git_data)
     expect(Branch.all.count).to eq(1)

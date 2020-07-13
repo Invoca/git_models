@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'hobo_fields'
+
 module GitModels
   module Repository
     extend ActiveSupport::Concern
@@ -12,7 +14,7 @@ module GitModels
 
       validates :name, uniqueness: true
 
-      has_many :branches, class_name: ::Branch, dependent: :destroy
+      has_many :branches, class_name: 'Branch', dependent: :destroy
     end
 
     class_methods do
