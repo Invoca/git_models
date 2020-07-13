@@ -20,7 +20,7 @@ PATH
     git_models (1.2.0)
       git_lib (~> 1.2)
       hobo_fields (~> 3.0)
-      rails (>= 4.2)
+      rails (>= 4.2, < 7)
 
 GEM
   remote: https://rubygems.org/
