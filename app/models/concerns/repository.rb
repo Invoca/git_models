@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'hobo_fields'
+require 'declare_schema'
 
 module GitModels
   module Repository

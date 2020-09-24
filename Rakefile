@@ -10,11 +10,8 @@ RSpec::Core::RakeTask.new
 Coveralls::RakeTask.new
 Bundler::Audit::Task.new
 
-desc "db"
 namespace :db do
-  desc "test"
   namespace :test do
-    desc "prepare"
     task :prepare do
       system <<~EOS
         set -ex

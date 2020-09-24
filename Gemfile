@@ -11,7 +11,6 @@ gem 'climate_control'
 gem 'coveralls', require: false
 gem 'database_cleaner'
 gem 'git_lib',      '~> 1.2', git: 'https://github.com/Invoca/git_lib.git', ref: 'a4a4b46ba00d85df4ca907c960ddf92a85a8c169'
-gem 'hobo_fields',  '~> 3.0', git: 'https://github.com/Invoca/hobo_fields.git', ref: 'e9623e9c3aa98a4822ef61d1f1e87d0ff8001ffc'
 gem 'pry'
 gem 'rails',        '>= 4.2'
 gem 'rake'
