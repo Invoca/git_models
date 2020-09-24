@@ -4,6 +4,10 @@ Inspired by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 Note: this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - Unreleased
+### Changed
+- Replace `hobo_fields` with `declare_schema`.
+
 ## [1.2.0] - 2020-07-13
 ### Added
 - Add support for Rails 5 and 6.
