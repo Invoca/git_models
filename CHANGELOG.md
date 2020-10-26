@@ -4,7 +4,7 @@ Inspired by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 Note: this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.3.0] - Unreleased
+## [1.3.1] - Unreleased
 ### Changed
 - Replace `hobo_fields` with `declare_schema`.
 - Update :text/:string in schemas.
@@ -26,5 +26,6 @@ Note: this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0
 - Get rubocop running again.
 - Clean up Rakefile.
 
+[1.3.1]: https://github.com/Invoca/git_models/compare/v1.2.0...v1.3.1
 [1.2.0]: https://github.com/Invoca/git_models/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/Invoca/git_models/compare/v1.1.0...v1.1.1
