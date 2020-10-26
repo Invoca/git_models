@@ -6,8 +6,9 @@ module GitModels
 
     included do
       fields do
-        git_updated_at :datetime, null: false
-        name :text, limit: 1024, null: false
+        git_updated_at  :datetime, null: false
+        name            :string, limit: 1024, null: false
+
         timestamps
       end
 

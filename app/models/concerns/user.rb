@@ -8,8 +8,9 @@ module GitModels
 
     included do
       fields do
-        name :text, limit: 255, null: false
-        email :text, limit: 255, null: false
+        name    :string, limit: 255, null: false
+        email   :string, limit: 255, null: false
+
         timestamps
       end
 

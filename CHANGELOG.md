@@ -7,6 +7,7 @@ Note: this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0
 ## [1.3.0] - Unreleased
 ### Changed
 - Replace `hobo_fields` with `declare_schema`.
+- Update :text/:string in schemas.
 
 ## [1.2.0] - 2020-07-13
 ### Added
